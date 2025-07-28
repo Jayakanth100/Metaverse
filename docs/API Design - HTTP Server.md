@@ -10,7 +10,7 @@
 		"password": "password",
 		"type": "admin"
 	}
-```
+	```
 
 2. Login user (Log in)
 	- POST `/api/v1/signin`
@@ -21,7 +21,7 @@
 		"username": "jai",
 		"password": "password"
 	}
-```
+	```
 	
 	- Response body:
 	
@@ -29,7 +29,7 @@
 	{
 		"token": "<token-generated>"
 	}
-```
+	```
 
 #### User info
 
@@ -41,7 +41,7 @@
 	{
 		"avatarId": "123"
 	}
-```
+	```
 
 2. Get available avatar
 	- GET `/api/v1/avatars`
@@ -56,7 +56,7 @@
 			}
 		]
 	}
-```
+	```
 
 3. Get other users metadata (name and avatar url)
 	- GET `/api/v1/user/metadata/bulk?ids=[1, 3, 55]`
@@ -71,7 +71,8 @@
 			}
 		]
 	}
-```
+	```
+
 #### Space dashboard
 
 1. Create a space 
@@ -84,7 +85,7 @@
 		"dimensions": "100x200",
 		"mapId": "<id> | empty"
 	}
-```
+	```
 
 2. Get all spaces
 	- GET `/api/v1/space/all`
@@ -101,7 +102,7 @@
 			}
 		]
 	}
-```
+	```
 
 3. Delete a space
 	- DELETE `/api/v1/space/:spaceid`
@@ -111,7 +112,7 @@
 	{
 		"userId": "<userId>"
 	}
-```
+	```
 
 #### Arena
 
@@ -136,7 +137,7 @@
 			}
 		]
 	}
-```
+	```
 
 2. Add an element
 	- POST `/api/v1/space/element`
@@ -149,7 +150,7 @@
 		"x": 50,
 		"y": 20
 	}
-```
+	```
 
 
 3. See all available elements
@@ -166,7 +167,7 @@
 			}
 		]
 	}
-```
+	```
 
 
 4. Delete an element
@@ -178,7 +179,7 @@
 		"spaceId": "123",
 		"elementId": "1"
 	}
-```
+	```
 
 #### Admin/Map creator endpoints
 
@@ -193,7 +194,7 @@
 		"height": 1,
 		"static": true
 	}
-```
+	```
 
 2. Update an element
 	- PUT `/api/v1/admin/element:elementId` - (can't update the dimensions once created)
@@ -203,7 +204,7 @@
 	{
 		"imageUrl": "<image-url>"
 	}
-```
+	```
 
 3. Create an avatar
 	- POST `/api/v1/admin/avatar`
@@ -221,7 +222,7 @@
 	{
 		"avatarId": "123"
 	}
-```
+	```
 
 4. Create a map
 	- POST `/api/v1/admin/map`
@@ -240,6 +241,6 @@
 			}
 		]
 	}
-```
+	```
 
 
