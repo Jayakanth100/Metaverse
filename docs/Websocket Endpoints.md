@@ -10,7 +10,7 @@
 			"token": "<jwt-token>"
 		}
 	}
-```
+    ```
 
 2. Movement
 
@@ -22,7 +22,7 @@
 			"y": 3
 		}
 	}
-```
+    ```
 
 #### Server sent events
 
@@ -43,7 +43,7 @@
 			]
 		}
 	}
-```
+	```
 
 2. Movement rejected
 	- User moves beyond the wall
@@ -58,7 +58,7 @@
 			"y": 3
 		}
 	}
-```
+	```
 
 3. Movement
 
@@ -71,7 +71,7 @@
 			"userId": "123"
 		}
 	}
-```
+	```
 
 4. Leave
 
@@ -82,4 +82,4 @@
 			"userId": 1
 		}
 	}
-```
+	```
