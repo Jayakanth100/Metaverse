@@ -10,7 +10,7 @@
 		"password": "password",
 		"type": "admin"
 	}
-```
+	```
 
 2. Login user (Log in)
 	- POST `/api/v1/signin`
@@ -21,7 +21,7 @@
 		"username": "jai",
 		"password": "password"
 	}
-```
+	```
 	
 	- Response body:
 	
@@ -29,7 +29,7 @@
 	{
 		"token": "<token-generated>"
 	}
-```
+	```
 
 #### User info
 
@@ -72,6 +72,7 @@
 		]
 	}
 	```
+
 #### Space dashboard
 
 1. Create a space 
