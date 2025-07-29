@@ -1,5 +1,4 @@
 node-modules/
 .obsidian/
 .env
-
 /generated/prisma
