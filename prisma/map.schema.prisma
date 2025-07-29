@@ -1,0 +1,7 @@
+model Map {
+    id          Int          @id @default(autoincrement())
+    name        String
+    width       Int
+    height      Int
+    MapElements MapElements?
+}
