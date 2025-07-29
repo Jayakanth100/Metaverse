@@ -1,0 +1,9 @@
+model MapElements {
+    id        Int     @id @default(autoincrement())
+    map       Map     @relation(fields: [mapId], references: [id])
+    mapId     Int     @unique
+    element   Element @relation(fields: [elementId], references: [id])
+    elementId Int     @unique
+    x         Int
+    y         Int
+}

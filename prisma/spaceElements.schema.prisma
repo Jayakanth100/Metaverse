@@ -1,0 +1,9 @@
+model SpaceElement {
+    id        Int     @id @default(autoincrement())
+    element   Element @relation(fields: [elementId], references: [id])
+    elementId Int     @unique
+    space     Space   @relation(fields: [spaceId], references: [id])
+    spaceId   Int     @unique
+    x         Int
+    y         Int
+}
